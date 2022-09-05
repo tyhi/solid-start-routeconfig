@@ -6,6 +6,7 @@ function hello() {
 }
 
 export default function Home() {
+    // Removing server() will stop the error form showing in the console.
     let [z] = createResource(server(hello));
 
   return (
